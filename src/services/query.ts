@@ -19,6 +19,9 @@ export function useTodosIds() {
     queryKey: ["todos"],
     queryFn: getTodoIds,
     refetchOnWindowFocus: false,
+    meta: {
+      isPersist: true,
+    },
   });
 }
 
